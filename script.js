@@ -72,8 +72,9 @@ const createReferences = references => {
             if (key === 'ref' ) obj.ref = item[key]
             if (key === 'text') obj.text = item[key]
         } 
+        createElementForm('a', obj)
     })
-    createElementForm('a', obj)
+    
 }
 
 const initFunction = request => {

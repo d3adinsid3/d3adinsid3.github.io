@@ -88,6 +88,10 @@
   p{
     display: inline;
   }
+  a{
+    float:right;
+    padding:1em;
+  }
   form input[type="file"] {
 	  margin-bottom: 20px;
   }
