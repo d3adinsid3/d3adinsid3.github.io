@@ -31,6 +31,12 @@ const createElementForm = (elem, arg) => {
 				createElementForm('select', arg)
                 let a = document.querySelector("select")
                 a.setAttribute('multiple','')
+                a.setAttribute('size','4')
+                a.style.height = "75px"
+                //Object.assign(a, {
+                //   multiple:'multiple',
+                //    size:'3'
+                //  })
 				return
 			}
 			if (arg[key] === 'color') {
@@ -109,6 +115,7 @@ inputFile.addEventListener('change', () => {
   reader.addEventListener('load', () => initFunction(reader.result))
   reader.addEventListener('error', () => console.log(reader.error))
   document.querySelector('.input__file-button-text').textContent = inputFile.files[0].name
+  document.getElementById("input__wrapper").style.visibility = "hidden";
 })
 
 resetFile.addEventListener('click', () => { 
@@ -116,9 +123,10 @@ resetFile.addEventListener('click', () => {
     arrData = []
     container.textContent = ''
     inputFile.value = ''
+    document.getElementById("input__wrapper").style.visibility = "visible";
 })
 
-
+//document.getElementById("input__wrapper").style.visibility = "hidden";
 
 
 

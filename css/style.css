@@ -3,6 +3,11 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+  select{
+    height:40px;
+    size:2;
+  }
   
   body {
 	color: #384047;
@@ -37,7 +42,7 @@
 
   form {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    min-width: 300px;
+    min-width: 320px;
     margin: 10px auto;
     padding: 10px 10px;
     background: #f4f7f8;
@@ -78,6 +83,10 @@
   input[type="radio"],
   input[type="checkbox"] {
     margin: 0 4px 8px 0;
+    display: inline;
+  }
+  p{
+    display: inline;
   }
   form input[type="file"] {
 	  margin-bottom: 20px;
@@ -120,7 +129,8 @@
     display: inline;
   }
   
-  .input__wrapper {
+ #input__wrapper {
+    display: block;
 	width: 100%;
 	position: relative;
 	margin: 15px 0;
